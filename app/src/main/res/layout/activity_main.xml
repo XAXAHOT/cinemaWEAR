@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/title" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="E-mail" />
+
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="you@example.com"
+            android:textColorHint="#6b6b6b"/>
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Пароль" />
+
+        <TextView
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView6"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="Ваш пароль"
+            android:textColorHint="#6b6b6b"/>
+
+        <Button
+            android:layout_marginTop="110dp"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:onClick="toMain"/>
+
+
+    </RelativeLayout>
+</androidx.wear.widget.BoxInsetLayout>
